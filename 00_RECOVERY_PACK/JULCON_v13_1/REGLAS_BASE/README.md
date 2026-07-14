@@ -17,7 +17,8 @@ Reglas base canónicas (`REGLA_BASE_CANONICA`) presentes en esta carpeta:
 - `REGLA_R22_HOMOLOGACION_FUGA_VALOR_MAS_SEVERO.md` — Homologación de distancia de fuga hacia el valor más severo.
 - `REGLA_R23_AUDITORIA_CANTIDADES_CONTRA_RECTOR.md` — Auditoría de cantidades, unidades cotizables y doble conteo.
 - `REGLA_R24_COTEJO_INGENIERIAS_OBLIGADAS_VS_OFRECIDAS.md` — Checklist de ingenierías obligadas contra ofrecidas.
+- `REGLA_R25_REVISION_OBLIGATORIA_AGENTE_ESPECIALISTA_SENIOR_INDEPENDIENTE.md` — Segunda revisión técnica independiente por especialista senior antes de ratificación.
 
-La numeración R20 ya estaba ocupada antes de esta integración. Por ello, las cuatro reglas propuestas como R20-R23 quedaron registradas como R21-R24, preservando la R20 existente.
+La numeración R20 ya estaba ocupada antes de la integración de R21-R24; se preservó la regla existente y se continuó la secuencia hasta R25.
 
-Esta carpeta es la fuente rectora base. Para un proyecto nuevo, el agente copia/adapta estas reglas al gobierno del proyecto en `PROYECTOS/<NOMBRE_PROYECTO>/00_GOBIERNO/` antes de trabajar. Para un proyecto activo, relee HEAD y resincroniza reglas sin borrar el contexto técnico del proyecto.
+Esta carpeta es la fuente rectora base. Para un proyecto nuevo, el agente copia o adapta estas reglas al gobierno del proyecto. Para un proyecto activo, relee HEAD y resincroniza reglas sin borrar el contexto técnico.
