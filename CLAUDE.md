@@ -27,7 +27,8 @@ Deben quedar activas, como mínimo:
 - R21 — actualización en sitio preservando estética;
 - R22 — homologación de distancia de fuga al valor más severo;
 - R23 — auditoría de cantidades contra rector;
-- R24 — cotejo de ingenierías obligadas vs ofrecidas.
+- R24 — cotejo de ingenierías obligadas vs ofrecidas;
+- R25 — revisión obligatoria por especialista senior independiente.
 
 El manifest y el índice gobiernan si aparecen reglas adicionales.
 
@@ -48,24 +49,33 @@ Al resincronizar un chat ya iniciado:
 - actualizar únicamente el motor de reglas;
 - continuar desde el punto previo con las reglas nuevas.
 
-## 5. Prohibición durante la carga del gobierno
+## 5. Gate R25
+
+Cuando el trabajo sea crítico, separar expresamente:
+
+- `ROL_CONSTRUCTOR`;
+- `ROL_REVISOR_SENIOR_INDEPENDIENTE`.
+
+El revisor senior debe consultar fuentes directamente, desafiar el trabajo y registrar hallazgos, discrepancias y estado. Una revisión por IA no sustituye firma profesional, autoridad competente ni ratificación del director EPC cuando corresponda.
+
+Si R25 aplica y no se ejecuta:
+
+`REVISION_SENIOR_NO_EJECUTADA / RATIFICACION_BLOQUEADA / NO_EMITIBLE`
+
+## 6. Prohibición durante la carga del gobierno
 
 Durante el arranque o resincronización no se deben abrir ni modificar documentos técnicos del cliente. Una vez terminada la carga del gobierno, el trabajo técnico puede continuar conforme al estado documental del proyecto.
 
-Estado de violación:
+## 7. Jerarquía
 
-`VIOLACION_DE_ARRANQUE / CONTAMINACION_DOCUMENTAL / NO_EMITIBLE`
+R0 gobierna a todas. R2, R5, R4 y R3 ordenan pertenencia, universo y cobertura. R7 gobierna referencias normativas. R20-R25 actúan como compuertas globales según la tarea.
 
-## 6. Jerarquía
-
-R0 gobierna a todas. R2, R5, R4 y R3 ordenan pertenencia, universo y cobertura. R7 gobierna referencias normativas. R20-R24 actúan como compuertas globales según la tarea.
-
-## 7. Estados esperados
+## 8. Estados esperados
 
 Proyecto nuevo:
 
-`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB_PUBLICO / GOBIERNO_BASE_ACTIVO / R20_R24_ACTIVAS / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
+`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB_PUBLICO / GOBIERNO_BASE_ACTIVO / R20_R25_ACTIVAS / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
 
 Proyecto activo:
 
-`JULCON_v13.1_REGLAS_ACTUALIZADAS_DESDE_GITHUB / GOBIERNO_RESINCRONIZADO / R20_R24_ACTIVAS / PROYECTO_PRESERVADO / LISTO_PARA_CONTINUAR`
+`JULCON_v13.1_REGLAS_ACTUALIZADAS_DESDE_GITHUB / GOBIERNO_RESINCRONIZADO / R20_R25_ACTIVAS / PROYECTO_PRESERVADO / LISTO_PARA_CONTINUAR`
