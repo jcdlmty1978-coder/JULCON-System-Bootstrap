@@ -1,63 +1,72 @@
-﻿# CLAUDE BOOTSTRAP â€” JULCON v13.1 / PROYECTO NUEVO / GITHUB ONLY
+# CLAUDE BOOTSTRAP — JULCON v13.1 / PROYECTO NUEVO / GITHUB ONLY
 
 **Estado:** PLANTILLA_CANONICA_GITHUB_ONLY / NO_EMITIBLE / USO_INTERNO
 
 ## 1. Mandato
 
-Para proyecto nuevo, la fuente del sistema debe tomarse exclusivamente desde GitHub.
+Para proyecto nuevo, la fuente del sistema debe tomarse exclusivamente desde GitHub público.
 
-No usar memoria de chat como verdad operativa.
-No usar archivos adjuntos como sustituto del sistema.
-No pedir que el usuario suba los archivos de arranque al chat.
-No pedir tokens pegados en conversaciÃ³n.
+No usar memoria de chat como verdad operativa.  
+No usar archivos adjuntos como sustituto del sistema.  
+No pedir que el usuario suba los archivos de arranque al chat.  
+No pedir tokens pegados en conversación.  
 No leer documentos del cliente durante el arranque.
 
 ## 2. Fuente obligatoria
 
-Repositorio fuente:
+Repositorio fuente público:
 
-`jcdlmty1978-coder/JULCON-System`
+`jcdlmty1978-coder/JULCON-System-Bootstrap`
 
 Archivo de entrada:
 
 `CLAUDE.md`
 
-El agente debe buscar y leer, desde GitHub, en este orden:
+El agente debe releer `HEAD` vigente al inicio de cada proyecto o chat nuevo y buscar/leer, desde GitHub, en este orden:
 
 1. `CLAUDE.md`
 2. `00_RECOVERY_PACK/CURRENT.md`
 3. `00_RECOVERY_PACK/JULCON_v13_1/MANIFEST.md`
 4. `00_RECOVERY_PACK/JULCON_v13_1/REGLAS_BASE/README.md`
-5. `PLANTILLAS/CLAUDE_BOOTSTRAP_JULCON_v13_1_PROYECTO_NUEVO.md`
-6. Reglas R0, R2, R3, R4 y R5 indicadas por el manifest.
+5. `PLANTILLAS/CLAUDE_BOOTSTRAP_JULCON_v13_1_PROYECTO_NUEVO_GITHUB_ONLY.md`
+6. Todas las reglas base canónicas listadas en el manifest y presentes en `REGLAS_BASE/`, incluyendo R0, R2, R3, R4, R5 y R7.
 
-## 3. Si GitHub no estÃ¡ disponible
+No debe reutilizar como vigentes reglas leídas en otro chat sin volver a consultar `HEAD`.
 
-Si la sesiÃ³n no tiene conector, OAuth, GitHub App, GitHub CLI autenticado, clone local autenticado o acceso raw autorizado al repositorio, el agente debe detenerse.
+## 3. Si GitHub no está disponible
 
-Estado Ãºnico permitido:
+Si la sesión no tiene acceso público raw/clone al repositorio, el agente debe detenerse.
 
-`GITHUB_SOURCE_REQUIRED / GITHUB_NO_DISPONIBLE / BASELINE_NO_CARGADA / NO_EMITIBLE`
+Estado único permitido:
 
-No ofrecer vÃ­a B manual como sustituto.
-No pedir adjuntos.
-No pedir Drive.
-No pedir tokens pegados.
-No fabricar estructura de proyecto.
-No activar reglas no leÃ­das desde GitHub.
+`BOOTSTRAP_PUBLICO_NO_ACCESIBLE / BASELINE_NO_CARGADA / NO_EMITIBLE`
 
-## 4. QuÃ© debe pedir en lugar de archivos
+No ofrecer vía B manual como sustituto.  
+No pedir adjuntos.  
+No pedir Drive.  
+No pedir tokens pegados.  
+No fabricar estructura de proyecto.  
+No activar reglas no leídas desde GitHub.
 
-El agente debe pedir Ãºnicamente que se habilite una vÃ­a de acceso GitHub:
+## 4. Reporte de actualización en cada arranque
 
-1. Conector GitHub / OAuth autorizado al repositorio.
-2. GitHub App autorizada al repositorio.
-3. GitHub CLI local autenticado con `gh auth login` y repo clonado.
-4. Repo espejo pÃºblico de solo lectura para archivos base no sensibles.
+El agente debe reportar:
 
-## 5. ProhibiciÃ³n de documentos cliente
+- commit `HEAD` leído;
+- ruta y estado de cada archivo requerido;
+- `blob SHA` cuando esté disponible;
+- reglas base localizadas;
+- confirmación de que no se tocaron documentos del cliente.
 
-Durante el arranque queda prohibido leer, abrir, analizar, citar, comparar, resumir, despiezar o modificar propuestas, cotizaciones, PDFs tÃ©cnicos, anexos, catÃ¡logos, planos, hojas de costo o documentos del cliente.
+Si un proyecto activo fue iniciado con un commit anterior, debe declarar:
+
+`REGLAS_BASE_ACTUALIZADAS_DISPONIBLES / RELECTURA_REQUERIDA`
+
+y releer las reglas vigentes antes de continuar. La adaptación del gobierno local del proyecto debe quedar trazada.
+
+## 5. Prohibición de documentos cliente
+
+Durante el arranque queda prohibido leer, abrir, analizar, citar, comparar, resumir, despiezar o modificar propuestas, cotizaciones, PDFs técnicos, anexos, catálogos, planos, hojas de costo o documentos del cliente.
 
 Estado si se toca un documento del cliente antes de terminar arranque:
 
@@ -65,12 +74,12 @@ Estado si se toca un documento del cliente antes de terminar arranque:
 
 ## 6. Estado exitoso esperado
 
-Cuando GitHub sÃ­ estÃ© disponible, despuÃ©s de leer la fuente, el agente debe declarar:
+Cuando GitHub esté disponible, después de leer la fuente y todas las reglas base vigentes, el agente debe declarar:
 
-`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB / GOBIERNO_BASE_ACTIVO / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
+`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB_PUBLICO / GOBIERNO_BASE_ACTIVO / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
 
-Luego podrÃ¡ crear o verificar:
+Luego podrá crear o verificar:
 
 `PROYECTOS/<NOMBRE_PROYECTO>/00_GOBIERNO/`
 
-sin tocar documentos tÃ©cnicos del cliente.
+sin tocar documentos técnicos del cliente hasta cerrar el bootstrap correspondiente.
