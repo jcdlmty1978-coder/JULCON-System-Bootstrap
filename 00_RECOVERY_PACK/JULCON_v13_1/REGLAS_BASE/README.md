@@ -2,7 +2,7 @@
 
 **Estado:** INDICE_BASE / USO_INTERNO / NO_EMITIBLE
 
-Esta carpeta concentra las reglas base que debe activar todo proyecto nuevo.
+Esta carpeta concentra las reglas base que debe activar todo proyecto nuevo o resincronizar todo proyecto activo.
 
 Reglas base canónicas (`REGLA_BASE_CANONICA`) presentes en esta carpeta:
 
@@ -12,5 +12,12 @@ Reglas base canónicas (`REGLA_BASE_CANONICA`) presentes en esta carpeta:
 - `REGLA_R4_INVENTARIO_ARRANQUE_OBLIGATORIO.md` — Inventario de arranque obligatorio.
 - `REGLA_R5_PERTENENCIA_PROBADA_CADENA_CARPETA.md` — Pertenencia probada por cadena de carpeta.
 - `REGLA_R7_VERIFICACION_OBLIGATORIA_NORMA_ESPECIFICACION_FUENTE_PRIMARIA.md` — Verificación obligatoria de norma/especificación en fuente primaria.
+- `REGLA_R20_INICIALIZACION_AGENTES_MOTORES_Y_FUENTE_RECTORA.md` — Inicialización multifuentente y fuente rectora por objeto de decisión.
+- `REGLA_R21_ACTUALIZACION_EN_SITIO_PRESERVANDO_ESTETICA.md` — Actualización quirúrgica en sitio, preservando estética y medios.
+- `REGLA_R22_HOMOLOGACION_FUGA_VALOR_MAS_SEVERO.md` — Homologación de distancia de fuga hacia el valor más severo.
+- `REGLA_R23_AUDITORIA_CANTIDADES_CONTRA_RECTOR.md` — Auditoría de cantidades, unidades cotizables y doble conteo.
+- `REGLA_R24_COTEJO_INGENIERIAS_OBLIGADAS_VS_OFRECIDAS.md` — Checklist de ingenierías obligadas contra ofrecidas.
 
-Esta carpeta es la fuente rectora base. Para un proyecto nuevo, el agente copia/adapta estas reglas al gobierno del proyecto en `PROYECTOS/<NOMBRE_PROYECTO>/00_GOBIERNO/` antes de trabajar. No se usa ninguna otra ubicación como semilla.
+La numeración R20 ya estaba ocupada antes de esta integración. Por ello, las cuatro reglas propuestas como R20-R23 quedaron registradas como R21-R24, preservando la R20 existente.
+
+Esta carpeta es la fuente rectora base. Para un proyecto nuevo, el agente copia/adapta estas reglas al gobierno del proyecto en `PROYECTOS/<NOMBRE_PROYECTO>/00_GOBIERNO/` antes de trabajar. Para un proyecto activo, relee HEAD y resincroniza reglas sin borrar el contexto técnico del proyecto.
