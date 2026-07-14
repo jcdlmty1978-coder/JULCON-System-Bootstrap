@@ -23,7 +23,7 @@ Leer en este orden:
 5. `PLANTILLAS/CLAUDE_BOOTSTRAP_JULCON_v13_1_PROYECTO_NUEVO_GITHUB_ONLY.md`
 6. Todas las reglas base canónicas presentes en `REGLAS_BASE/`.
 
-Como mínimo deben quedar leídas y activas R0, R2, R3, R4, R5, R7 y R20-R24.
+Como mínimo deben quedar leídas y activas R0, R2, R3, R4, R5, R7 y R20-R25.
 
 ## 3. Proyecto activo
 
@@ -36,16 +36,27 @@ Si el chat ya contiene trabajo técnico:
 
 GitHub prevalece sobre reglas recordadas por el chat.
 
-## 4. Reporte
+## 4. Gate de revisión senior
+
+Para trabajos críticos, activar R25 y separar:
+
+- `ROL_CONSTRUCTOR`
+- `ROL_REVISOR_SENIOR_INDEPENDIENTE`
+
+El revisor debe consultar fuentes directamente, comprobar cálculos y cantidades cuando existan, revisar interfaces y riesgos, y emitir uno de los estados autorizados por R25.
+
+La revisión por IA no sustituye firma profesional, aprobación regulatoria ni ratificación del director EPC.
+
+## 5. Reporte
 
 Reportar commit HEAD, rutas, estado de lectura, blob SHA cuando esté disponible, reglas nuevas o modificadas y confirmación de preservación del proyecto.
 
-## 5. Estados esperados
+## 6. Estados esperados
 
 Proyecto nuevo:
 
-`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB_PUBLICO / GOBIERNO_BASE_ACTIVO / R20_R24_ACTIVAS / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
+`JULCON_v13.1_BASE_LEIDA_DESDE_GITHUB_PUBLICO / GOBIERNO_BASE_ACTIVO / R20_R25_ACTIVAS / NO_EMITIBLE_HASTA_BOOTSTRAP_DE_PROYECTO`
 
 Proyecto activo:
 
-`JULCON_v13.1_REGLAS_ACTUALIZADAS_DESDE_GITHUB / GOBIERNO_RESINCRONIZADO / R20_R24_ACTIVAS / PROYECTO_PRESERVADO / LISTO_PARA_CONTINUAR`
+`JULCON_v13.1_REGLAS_ACTUALIZADAS_DESDE_GITHUB / GOBIERNO_RESINCRONIZADO / R20_R25_ACTIVAS / PROYECTO_PRESERVADO / LISTO_PARA_CONTINUAR`
