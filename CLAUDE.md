@@ -79,3 +79,13 @@ Proyecto nuevo:
 Proyecto activo:
 
 `JULCON_v13.1_REGLAS_ACTUALIZADAS_DESDE_GITHUB / GOBIERNO_RESINCRONIZADO / R20_R25_ACTIVAS / PROYECTO_PRESERVADO / LISTO_PARA_CONTINUAR`
+
+## 9. Perfil de centro de carga — visita preliminar (compatibilidad al 2026-10-30)
+
+Para una nueva visita a centro de carga, después de cargar v13.1 y las reglas base, leer:
+- `00_RECOVERY_PACK/ESTADO_COMPATIBILIDAD_v13_2_20261030.md`;
+- `PLANTILLAS/CENTROS_DE_CARGA/ARRANQUE_PRELIMINAR_JULCON.md`;
+- `PLANTILLAS/CENTROS_DE_CARGA/CHECKLIST_VISITA_CENTRO_CARGA.md`.
+- Para visita del 4 de noviembre de 2026, consultar `PLANTILLAS/CENTROS_DE_CARGA/ARRANQUE_VISITA_20261104.md`.
+
+**La versión canónica continúa siendo v13.1.** Estas plantillas NO promueven motores v13.2, no autorizan uso EPC real de componentes experimentales, ni sustituyen R25. Nunca colocar datos o documentos de cliente en este repositorio público. El estado de hitos está en el documento de compatibilidad.
