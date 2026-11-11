@@ -1,8 +1,8 @@
-# YAML 1.2 — índice candidato de 29 reglas (28 previas + RD-001)
-version: '13.2-draft'
-estado: 'PR-1_NO_CANONICO'
+# YAML 1.2 — índice vigente de 29 reglas (28 previas + RD-001)
+version: '13.2'
+estado: 'VIGENTE_v13.2'
 base_main: '4de49d6b58dab0309442bbe227a28e76575378da'
-nota: 'El contenido de REGLAS/ es copia íntegra con procedencia; no cambia regla activa hasta ratificación.'
+nota: 'Índice de gobierno documental vigente desde v13.2.0; conservar la procedencia y respetar el estado particular de cada regla, las revisiones técnicas pendientes y los controles humanos. La vigencia documental no activa motores.'
 reglas:
   - id: "R0"
     titulo: "Cobertura documental exhaustiva"
