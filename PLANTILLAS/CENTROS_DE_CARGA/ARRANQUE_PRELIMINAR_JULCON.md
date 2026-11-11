@@ -1,4 +1,4 @@
-<!-- Fuente espejo público 08432bb4...; blob 8f5064982322ee819dc924ab0fb07e175d08888c; PR-1 CANDIDATO, revisar antes de uso -->
+<!-- Fuente espejo público 08432bb4...; blob 8f5064982322ee819dc924ab0fb07e175d08888c; procedencia histórica; aplicar gobierno vigente antes de uso -->
 
 # Bootstrap — Nuevo centro de carga · visita preliminar JULCON
 **Perfil:** JULCON v13.2 (tras ratificación) + observación de campo · **Estado:** INTERNO / NO EMITIBLE.

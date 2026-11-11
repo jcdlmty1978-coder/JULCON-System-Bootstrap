@@ -1,4 +1,4 @@
-<!-- Fuente espejo público 08432bb4...; blob b5729537afe607442189dab9057297be37d2716e; PR-1 CANDIDATO, revisar antes de uso -->
+<!-- Fuente espejo público 08432bb4...; blob b5729537afe607442189dab9057297be37d2716e; procedencia histórica; aplicar gobierno vigente antes de uso -->
 
 # Checklist técnico de campo — centro de carga
 **JULCON v13.1 · uso inicial · INTERNO / NO EMITIBLE**. No realizar operaciones ni ensayos sin permisos y procedimiento. Todo campo sin evidencia queda **TBD**.
